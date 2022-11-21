@@ -1,6 +1,7 @@
 package page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import util.BasePage;
 
@@ -28,10 +29,9 @@ public class LoginPage extends BasePage {
     public static void login(){
 
 
-        driver.findElement(By.xpath("(//*[text()='Login'])[3]")).click();
-    }
-    public void click(){
+       WebElement click= driver.findElement(By.xpath("(//*[text()='Login'])[3]"));
 
-        driver.findElement(By.xpath("123")).click();
+       click.click();
     }
+
 }
