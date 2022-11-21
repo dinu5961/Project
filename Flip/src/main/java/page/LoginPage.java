@@ -33,5 +33,10 @@ public class LoginPage extends BasePage {
 
        click.click();
     }
+    public void loginClick (){
+
+
+        driver.findElement(By.xpath("wer")).click();
+    }
 
 }
