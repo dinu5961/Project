@@ -26,6 +26,12 @@ public class LoginPage extends BasePage {
         driver.findElement(By.xpath("//*[@type='password']")).sendKeys(password);
     }
     public static void login(){
+
+
         driver.findElement(By.xpath("(//*[text()='Login'])[3]")).click();
+    }
+    public void click(){
+
+        driver.findElement(By.xpath("123")).click();
     }
 }
